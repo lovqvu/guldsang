@@ -31,11 +31,15 @@ img {
 .navbar{
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
+#logo{
+	content: url("../images/Guld_logo.png");
+	max-height: 50px ;
+}
 
 
 /* -- Kode 2 x 2 bokse er kopieret fra Codepen.io START -- */
 
-.half-fluid {
+.half-fluid-boern {
 
 	// Add .left-half or .right-half class to the image column depending on which side it goes on
 	// On mobile, images stack, break out of the container, and go full width
@@ -51,8 +55,7 @@ img {
 	}
 
 	// Background image
-	.imageLeft {
-		background-image: url("../images/dreng.jpg");
+	.imageLeft, .imageRight {
 		background-size: cover;
 		background-position: center;
 		min-height: 400px;
@@ -60,12 +63,11 @@ img {
 	}
 
 	// Background image
+	.imageLeft {
+		background-image: url("../images/dreng.jpg");
+	}
 	.imageRight {
 		background-image: url("../images/boern_kor.jpg");
-		background-size: cover;
-		background-position: center;
-		min-height: 400px;
-		height: 100%;
 	}
 }
 
@@ -73,7 +75,7 @@ img {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 
-	.half-fluid {
+	.half-fluid-boern {
 		.left-half {
 			padding-left:0 !important;
 			position: absolute;
