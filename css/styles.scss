@@ -17,3 +17,16 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+/* Eksempel på AOS-animation på klasser =  <div class="box" data-aos="fade-up" data-aos-duration="1000"> */
+
+/* Sikrer billeder er responsive */
+img {
+	display: block; /* Billeder er et element (laver linjeskift) */
+	max-width: 100%; /* Bredde må maks fylde 100% */
+	height: auto; /* Højden skal tilpasse sig */
+}
+
+
+
