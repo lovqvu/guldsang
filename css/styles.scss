@@ -38,7 +38,6 @@ img {
 
 
 /* -- Kode 2 x 2 bokse er kopieret fra Codepen.io START -- */
-
 .half-fluid-boern {
 
 	// Add .left-half or .right-half class to the image column depending on which side it goes on
@@ -70,12 +69,12 @@ img {
 		background-image: url("../images/boern_kor.jpg");
 	}
 }
+/* -- Kode 2 x 2 bokse er kopieret fra Codepen.io SLUT -- */
 
-// When compiling with BS Sass files, use: @include media-breakpoint-up(lg)
-// Large devices (desktops, 1200px and up)
+/*-- Her skifter til LAPTOP Størrelse --------------------------------------------------------------------------------*/
+
 @media (min-width: 1200px) {
-
-
+	/* -- Kode 2 x 2 bokse er kopieret fra Codepen.io START -- */
 	.half-fluid-boern {
 		.left-half {
 			padding-left:0 !important;
@@ -95,9 +94,12 @@ img {
 			width: auto;
 		}
 	}
+	/* -- Kode 2 x 2 bokse er kopieret fra Codepen.io SLUT -- */
+
+
 }
 
-/* -- Kode 2 x 2 bokse er kopieret fra Codepen.io SLUT -- */
+
 
 
 
