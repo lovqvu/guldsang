@@ -21,22 +21,56 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 /* -------------------------------------------------------------------------------------------------------------------*/
 /* Eksempel på AOS-animation på klasser =  <div class="box" data-aos="fade-up" data-aos-duration="1000"> */
 
-/* Sikrer billeder er responsive */
-img {
-	display: block; /* Billeder er et element (laver linjeskift) */
-	max-width: 100%; /* Bredde må maks fylde 100% */
-	height: auto; /* Højden skal tilpasse sig */
+$theme-colors: (
+				"primary":    $primary,
+				"secondary":  $secondary,
+				"success":    $success,
+				"info":       $info,
+				"warning":    $warning,
+				"danger":     $danger,
+				"light":      $light,
+				"dark":       $dark
+);
+
+
+$farve1:#f0f2f1;
+$farve2:#ffd571;
+$farve3:#ffb714;
+$farve4:#d2721a;
+$farve5:#69c8ff;
+
+.farve1{
+	color: $farve1;
 }
 
-.navbar{
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+.farve2{
+	color: $farve2;
 }
+
+.farve3{
+	color: $farve3;
+}
+
+.farve4{
+	color: $farve4;
+}
+
+.farve5{
+	color: $farve5;
+}
+
+
 #logo{
-	content: url("../images/2.png");
-	max-height: 50px;
+	content: url("../images/logo.png");
+	max-height: 60px;
 }
 
-
+.heroContent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
 
 

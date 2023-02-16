@@ -16,6 +16,13 @@
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	<!-- Link til AOS - (Animation direkte på "Class" -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="http://mpportfolio.dk/guldsang/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="http://mpportfolio.dk/guldsang/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="http://mpportfolio.dk/guldsang/icons/favicon-16x16.png">
+	<link rel="manifest" href="http://mpportfolio.dk/guldsang/icons/site.webmanifest">
+
+
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -23,7 +30,7 @@
 <body>
 <!-- Navigation - START ----------------------------------------------------------------------------------------------->
 
-<nav class="navbar navbar-expand-lg bg-white text-uppercase fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg bg-white text-uppercase fixed-top shadow" id="mainNav">
 	<div class="container">
 		<a class="navbar-brand" href="index.html" id="logo">Guldsang</a>
 		<button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,14 +109,65 @@
 <!-- Her skal sidens indhold ligge -->
 <!-- Main - START ----------------------------------------------------------------------------------------------------->
 
-<!-- Sektion med Header -->
-<div class="container-fluid d-flex g-0 mt-5">
-	<div class="headImage"><img src="images/guldsang_forside.jpg" alt="Guldsang forside"></div>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<img src="images/guldsang_forside.jpg" alt="test" class="img-fluid">
+			<div class="heroContent">
+				<h1>Fællesskab</h1>
+				<p class="pHero">
+					This is the first line in the jumbotron.<br>
+					The second line appears underneath the first line.
+				</p>
+				<button type="button" class="btn btn-primary">Tilmelding</button>
+				<button type="button" class="btn btn-secondary">Kontakt</button>
+			</div>
+		</div>
+	</div>
 </div>
 
+
+
+
+<div class="card bg-dark text-white" style="max-width: 100%;">
+	<img src="https://mdbcdn.b-cdn.net/img/new/slides/017.webp" class="card-img" alt="Stony Beach"/>
+	<div class="card-img-overlay">
+		<h5 class="card-title">Card title</h5>
+		<p class="card-text">
+			This is a wider card with supporting text below as a natural lead-in to additional
+			content. This content is a little bit longer.
+		</p>
+		<p class="card-text">Last updated 3 mins ago</p>
+	</div>
+</div>
+
+
+
+<div class="bg-image" style="max-width: 100%;">
+	<img src="images/guldsang_forside.jpg" class="w-100" />
+	<div class="mask text-light d-flex justify-content-center flex-column text-center" style="background-color: rgba(0, 0, 0, 0.5)">
+		<h4>Custom heading</h4>
+		<p class="m-0">paragraph</p>
+	</div>
+</div>
+
+
+
+
+<div class="container-fluid g-0 mt-4 pt-5 id">
+<img class="img-fluid" src="images/guldsang_forside.jpg" alt="Guldsang forside billede">
+</div>
+
+
 <!-- Sektion Under Header med "Hold" billeder -->
-<div class="container-fluid d-flex g-0 my-lg-5 px-lg-5 text-center text-uppercase">
-	<div class="row">
+<div class="container-fluid g-0 text-center text-uppercase hold px-lg-5">
+	<div class="text-start ps-lg-3">
+		<h1>Vores Hold</h1>
+		<p class="lead">Vores Hold</p>
+	</div>
+	<div class="row d-flex text-center">
 		<div class="col-12 col-lg-2"><a href="#"><img src="images/boerne_hold.jpg" class="rounded-3" alt="Børn"></a>Børn</div>
 		<div class="col-12 col-lg-2"><a href="#"><img src="images/unge_hold.jpg" class="rounded-3" alt="Unge"></a>Unge</div>
 		<div class="col-12 col-lg-2"><a href="#"><img src="images/voksne_hold.jpg" class="rounded-3" alt="Voksne"></a>Voksne</div>
@@ -120,25 +178,31 @@
 </div>
 
 <!-- Sektion med Video -->
-<div class="container d-flex pb-lg-5">
-	<div class="row pb-lg-5">
+<div class="container d-flex py-lg-5">
+	<div class="row py-lg-5">
 		<div class="col-12 col-lg-6 align-self-center">
-			<h1>Sang kan bruges på flere måder</h1>
-			<p class="lead">Sjovt, Genielt</p>
-			<p>Maltes forældre har fundet en Fantastisk og Sjov måde at løse konflikter på</p>
+			<h1>Konfliktsangen</h1>
+			<p class="lead">Sjovt, Genialt og Effektivt</p>
+			<p>Maltes forældre har fundet en Fantastisk og Sjov måde at løse konflikter på med sang - Én af de mange måder sang kan bruges på.</p>
 		</div>
-		<div class="col-12 col-lg-3 ps-lg-5 justify-content-center d-flex"><video width="250" height="600" controls><source src="video/syng_konflikten_1.mp4" type="video/mp4">Syng Konflikten 1</video></div>
-		<div class="col-12 col-lg-3 ps-lg-5 justify-content-center d-flex"><video width="250" height="600" controls><source src="video/syng_konflikten_2.mp4" type="video/mp4">Syng Konflikten 2</video></div>
+		<div class="col-12 col-lg-3 ps-lg-5 justify-content-center d-flex"><video width="250" height="450" controls><source src="video/syng_konflikten_1.mp4" type="video/mp4">Syng Konflikten 1</video></div>
+		<div class="col-12 col-lg-3 ps-lg-5 justify-content-center d-flex"><video width="250" height="450" controls><source src="video/syng_konflikten_2.mp4" type="video/mp4">Syng Konflikten 2</video></div>
 	</div>
 </div>
 
 <!-- Sektion med Nyhedsbrev -->
-<div class="container-fluid bg-secondary d-flex pt-5 px-lg-5">
-	<div class="col-12 text-uppercase text-center">
+
+<div class="container-fluid hold bg-secondary d-flex py-3 px-lg-5">
+	<div class="col-12 text-uppercase text-center pb-3">
 		<h2>Nyhedsbrev</h2>
 		<p class="lead">Få tilsendt spændende nyheder om NYE arrangementer</p>
+		<div class="input-group flex-nowrap w-50">
+			<input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+			<span class="input-group-text bg-danger" id="addon-wrapping">Tilmeld</span>
+		</div>
 	</div>
 </div>
+
 
 
 <!-- Footer - START --------------------------------------------------------------------------------------------------->
@@ -147,15 +211,14 @@
 		<div class="row">
 			<!-- Footer Location-->
 			<div class="col-lg-3 mb-5 mb-lg-0">
-				<img src="images/2.png " alt="Logo Guldsang">
+				<img src="images/logo.png" alt="Logo Guldsang">
 			</div>
 			<!-- Footer Location-->
 			<div class="col-lg-3 mb-5 mb-lg-0">
 				<h4 class="text-uppercase mb-4">Adresse</h4>
 				<p class="lead mb-0">
-					Guldsang
-					<br/>
-					Jernbanegade 34, <br> 4800 Nykøbing Falster
+					Jernbanegade 34,
+					<br> 4800 Nykøbing Falster
 				</p>
 			</div>
 
@@ -163,16 +226,16 @@
 			<div class="col-lg-3 mb-5 mb-lg-0">
 				<h4 class="text-uppercase mb-4">Følg os</h4>
 				<p class="lead mb-0"> Sociale Medier</p>
-				<a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-facebook-f text-primary"></i></a>
-				<a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-instagram text-primary"></i></a>
+				<a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-fw fa-facebook-f text-primary"></i></a>
+				<a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-fw fa-instagram text-primary"></i></a>
 			</div>
 
 			<!-- Footer About Text-->
 			<div class="col-lg-3">
 				<h4 class="text-uppercase mb-4">Kontakt os</h4>
 				<p class="lead mb-0">
-					Vi kan træffes telefooninsk i tidsrummet <br>man-fre. kl. 10.00 - 13.00<br>
-					40 50 60 70 eller <a href="mailto:johndoe@gmail.com">Skriv Besked</a>.
+					<a href="tel:30822356">30822356</a><br>
+					 <a href="mailto:firmamail@icloud.com">Skriv email</a>
 				</p>
 			</div>
 		</div>
