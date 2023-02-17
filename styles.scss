@@ -1,0 +1,51 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$link-decoration: none;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+$custom-colors: (
+	"farve": $cyan-400,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "bootstrapComponents";
+
+// 5. Du kan lave styling her...
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+/* Eksempel på AOS-animation på klasser =  <div class="box" data-aos="fade-up" data-aos-duration="1000"> */
+
+/* Sikrer billeder er responsive */
+$tablet: "screen and (min-width: 768px)";
+
+img {
+	display: block; /* Billeder er et element (laver linjeskift) */
+	max-width: 100%; /* Bredde må maks fylde 100% */
+	height: auto; /* Højden skal tilpasse sig */
+}
+
+.navbar{
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+#logo{
+	content: url("images/logo.png");
+	max-height: 60px;
+}
+
+.card{
+	@media #{$tablet} {
+		width: 25%;
+	}
+}
+
+
+
+
+
+
